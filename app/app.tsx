@@ -30,7 +30,7 @@ export const NAVIGATION_PERSISTENCE_KEY = "NAVIGATION_STATE"
  */
 function App() {
   const [rootStore, setRootStore] = useState<RootStore | undefined>(undefined)
-
+  console.log(`rootStore`, rootStore)
   useBackButtonHandler(canExit)
   const {
     initialNavigationState,
