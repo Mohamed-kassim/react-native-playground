@@ -13,6 +13,7 @@ target 'LivenessDetection' do
     # to enable hermes on iOS, change `false` to `true` and then install pods
     :hermes_enabled => true
   )
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
 
   target 'LivenessDetectionTests' do
     inherit! :complete

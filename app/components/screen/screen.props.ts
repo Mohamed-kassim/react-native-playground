@@ -1,5 +1,5 @@
 import React from "react"
-import { StyleProp, ViewStyle } from "react-native"
+import { StatusBarProps, StyleProp, ViewProps, ViewStyle } from "react-native"
 import { KeyboardOffsets, ScreenPresets } from "./screen.presets"
 
 export interface ScreenProps {
@@ -27,6 +27,8 @@ export interface ScreenProps {
    * An optional status bar setting. Defaults to light-content.
    */
   statusBar?: "light-content" | "dark-content"
+
+  statusBarProps?: StatusBarProps
 
   /**
    * Should we not wrap in SafeAreaView? Defaults to false.
